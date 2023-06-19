@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 *main - entery point
-Descripition: - "to print the alphabet lowercase in reverse".
+*Descripition: - "to print the alphabet lowercase in reverse".
 *Return: (0) success.
 */
 int main(void)
