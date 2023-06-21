@@ -1,13 +1,13 @@
-#include "main.h"
+#include"main.h"
+
 /**
- * main - entry point
- * Description: Calls the print_alphabet function
- * Return: Return(0)
- */
-void print_alphabet(void)
+*print_alphabet-Printsthealphabetinlowercase.
+*/
+voidprint_alphabet(void)
 {
-int i;
-for (i = 97; i <= 122; i++)
+inti;
+
+for(i='a';i<='z';i++)
 {
 _putchar(i);
 }
