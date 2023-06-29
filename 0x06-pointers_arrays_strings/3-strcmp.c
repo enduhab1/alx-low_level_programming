@@ -1,9 +1,14 @@
-#include "main.h"
+#include "main"
 /**
-*_strcmp -compare string value
-*@s1: inpute value
-*@s2: inpute value
-*/
+ * _strcmp - Compares two strings lexicographically.
+ * @s1: Pointer to the first string.
+ * @s2: Pointer to the second string.
+ *
+ * Return:
+ *   - An integer less than 0 if s1 is less than s2.
+ *   - 0 if s1 is equal to s2.
+ *   - An integer greater than 0 if s1 is greater than s2.
+ */
 int _strcmp(char *s1, char *s2)
 {
 int i;
