@@ -14,12 +14,11 @@ char *reverse_string(char *str);
 */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-int len1 = 0, len2 = 0, carry = 0, sum = 0, i = 0;
-
-while (n1[len1] != '\0')
-len1++;
-while (n2[len2] != '\0')
-len2++;
+int len1 = strlen(n1);
+int len2 = strlen(n2);
+int carry = 0;
+int sum = 0;
+int i = 0;
 
 if (len1 >= size_r || len2 >= size_r)
 return (0);
@@ -31,17 +30,32 @@ size_r--;
 while (len1 >= 0 || len2 >= 0 || carry)
 {
 if (len1 >= 0)
-sum += (n1[len1--] - '0');
+sum += (n1[len1] - '0');
 if (len2 >= 0)
-sum += (n2[len2--] - '0');
+sum += (n2[len2] - '0');
 
 sum += carry;
-r[i++] = (sum % 10) + '0';
-carry = sum / 10;
-sum = 0;
 
 if (i >= size_r)
 return (0);
+
+if (sum > 9)
+{
+carry = 1;
+sum -= 10;
+}
+else
+{
+carry = 0;
+}
+
+r[i++] = sum + '0';
+sum = 0;
+
+if (len1 >= 0)
+len1--;
+if (len2 >= 0)
+len2--;
 }
 
 r[i] = '\0';
