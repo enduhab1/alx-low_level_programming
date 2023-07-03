@@ -23,7 +23,6 @@ sum2 += a[(size - 1) * (i + 1)];
 }
 
 /* Print sums of diagonals */
-printf("Sum of main diagonal: %d\n", sum1);
-printf("Sum of secondary diagonal: %d\n", sum2);
+printf("%d, %d\n", sum1, sum2);
 }
 
