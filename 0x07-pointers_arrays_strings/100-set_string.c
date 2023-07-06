@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include<stdio.h>
 #include "main.h"
 /**
@@ -11,3 +12,6 @@ void set_string(char **s, char *to)
 {
 *s = to;
 }
+=======
+
+>>>>>>> 499cebb3cc905ce5bc9f103686ff7b7e55bf8426
